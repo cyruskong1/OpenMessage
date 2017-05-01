@@ -1,0 +1,28 @@
+{
+  "name": "OpenMessage",
+  "version": "1.0.0",
+  "description": "Goal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyruskong1/OpenMessage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyruskong1/OpenMessage/issues"
+  },
+  "homepage": "https://github.com/cyruskong1/OpenMessage#readme",
+   "dependencies": {
+    "express": "^4.14.1",
+    "nodemon": "^1.11.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.2.1"
+  }
+}
