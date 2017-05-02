@@ -22101,7 +22101,7 @@ exports.default = function () {
   return _react2.default.createElement(
     "div",
     { className: "header" },
-    _react2.default.createElement("a", { href: "#", className: "logo" }),
+    _react2.default.createElement("img", { className: "icon", src: "http://media.gettyimages.com/illustrations/female-face-with-wireframe-illustration-id186449302" }),
     _react2.default.createElement(
       "ul",
       { className: "nav" },
