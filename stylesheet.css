@@ -1,0 +1,44 @@
+.header {
+  position: fixed;
+  background-color: #171717;
+  width: 100%;
+  min-width: 1140px;
+  max-width: 1440px;
+  height: 72px;
+  top: 0;
+  color: #dadada;
+  z-index: 122;
+};
+
+.nav {
+  display: inline-block;
+}
+
+.nav-li {
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  height: 72px;
+  padding-right: 30px;
+  text-align: center;
+  position: relative;
+  padding-top: 30px;
+  font-size: 14px;
+}
+
+.img-box {
+  width: 500px;
+  height: 500px;
+  background-color: #e4e4e4;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.compare {
+  float: left;
+}
+
+.first {
+  padding-right: 70px;
+}
