@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+
   background-color: #171717;
   width: 100%;
   min-width: 1140px;
@@ -58,7 +58,7 @@
   overflow: hidden;
 }
 
-.icons {
-  background-image:url('https://s2-f.scribdassets.com/images/upload/Upload_Upload.svg?1493414777'); 
+.icons.icon-upload{
+  background-image:url("https://www.metatube.com/assets/metatube/video/img/Upload.svg"); 
 }
 
