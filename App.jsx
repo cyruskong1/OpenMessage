@@ -153,7 +153,7 @@ export default class App extends React.Component {
         api_key: apiKey,
         api_secret: apiSecret,
         image_file: data,
-        image_file2: 
+        image_file2: '',
         },
       method:'POST',
       dataType:'json'
@@ -164,7 +164,7 @@ export default class App extends React.Component {
         return response.confidence;
       })
      .then(function(data) {
-        console.log('data', data)
+        console.log('data from face compare', data)
       })
      .catch(function(error) {console.log('error', error)
        });
@@ -172,7 +172,12 @@ export default class App extends React.Component {
   }
 
   clearSearch() {
-    
+    if(this.state.imagePreviewUrl) {
+      this.setState({
+        imagePreviewUrl:''
+      });
+      console.log('cleared image')
+    }
   }
 
 
@@ -204,7 +209,7 @@ export default class App extends React.Component {
                   <form onSubmit={(e)=>this._handleSubmit(e)}>
                     <input className="fileInput" type="file" onChange={(e)=>this._handleImageChange(e)} />
                     <button className="submitButton" type="submit" onClick={(e)=>this._handleSubmit(e)} onClick={() => this.searchForMatchingFace()}>Find my Look-a-like</button>
-                    <button className="clear">Undo</button>
+                    <button className="clear" onClick ={() => this.clearSearch()}>Clear</button>
                   </form>
                 </div>
               </div>
